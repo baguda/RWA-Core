@@ -60,7 +60,12 @@
     <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
  
-
+  <FactionDef ParentName="AncientsBase">
+    <defName>AdventureHostile</defName>
+    <label>hostile ancients</label>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+  
  <ThingDef ParentName="ApparelNoQualityBase">
     <defName>AdventurersBackpack</defName>
     <label>Adventurer's Backpack</label>

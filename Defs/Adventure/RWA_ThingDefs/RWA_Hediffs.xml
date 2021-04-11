@@ -86,13 +86,13 @@
 
 			</li>
 			<li Class = "HeVe.HeVeAbility">
-				<Label>Flame Wave</Label>
-				<description>Break open several flare and send forth a blazing wave of accelerant.</description>
+				<Label>Rain of Fire</Label>
+				<description>Break open a flare and send forth blazing waves of accelerant.(AoE ground effect, 1-5 burn damage per second for 10 seconds)</description>
 				<commandIcon>Adventure/HurtIcon</commandIcon>
 				<hasStandardCommand>true</hasStandardCommand>
 				<onlyManualCast>True</onlyManualCast>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<ResourceCost>5</ResourceCost>
+				<ResourceCost>1</ResourceCost>
 				
 				<AbilityCooldownInTicks>7200</AbilityCooldownInTicks>
 				<verblike>
@@ -103,6 +103,7 @@
 					<range>7</range>
 					<defaultCooldownTime>0.5</defaultCooldownTime>
 					<drawAimPie>true</drawAimPie>
+					<minRange>2</minRange>
 				</verblike>
 				<misscastBaseChance>0</misscastBaseChance>
 				<requiredSeverity>0.0</requiredSeverity>
@@ -110,29 +111,25 @@
 					<PathShape>
 						<li>target</li>
 					</PathShape>
-					<Radius>1</Radius>
+					<Radius>2</Radius>
 					<PathWidth>1</PathWidth>
-					<DeltaRadius>.25</DeltaRadius>
+					<DeltaRadius>0</DeltaRadius>
 					<DeltaWidth>0.0</DeltaWidth>
 					<Duration>60</Duration>
-					<useTimeNotSpeed>false</useTimeNotSpeed>
-					<useTotalTime>false</useTotalTime>
-					<Speed>0.01</Speed>
-					<isWave>true</isWave>
+					<useTimeNotSpeed>true</useTimeNotSpeed>
+					<useTotalTime>true</useTotalTime>
+					<Speed>0.00</Speed>
+					<isWave>false</isWave>
 					<WaveLength>4</WaveLength>
 					<TotalTime>600</TotalTime>
-					<Frequency>1</Frequency>
+					<Frequency>60</Frequency>
 					<isFire>false</isFire>
 					<phenotypes>
 						<li Class="Phenomena.Hurt">
 							<isHurt>true</isHurt>
 							<damageType>Burn</damageType>
-							<magnitudeRange>5~10</magnitudeRange>
+							<magnitudeRange>1~5</magnitudeRange>
 							<HurtArmorPenetration>0</HurtArmorPenetration>
-						</li>
-						<li Class="Phenomena.Fire">
-							<IsFire>true</IsFire>
-							<Scale>0.5</Scale>
 						</li>
 						<li Class="Phenomena.Optics_Properties">
 							<OpticsOnTargets>
@@ -179,8 +176,8 @@
 								<UseDustPuffThick>false</UseDustPuffThick> 
 								<UseExplosion>false</UseExplosion>
 								<UseExplosionInterior>false</UseExplosionInterior>
-								<UseFireGlow>false</UseFireGlow> 
-								<UseHeatGlow>true</UseHeatGlow>
+								<UseFireGlow>true</UseFireGlow> 
+								<UseHeatGlow>false</UseHeatGlow>
 								<UseLightningGlow>false</UseLightningGlow>
 								<UseMetaIcon>false</UseMetaIcon>
 								<UseMetaPuff>false</UseMetaPuff>
@@ -202,7 +199,7 @@
 						<EffectBuildings>false</EffectBuildings>
 						<EffectPlants>false</EffectPlants>
 						<EffectItems>false</EffectItems>
-						<InstantCast>false</InstantCast>
+						<InstantCast>true</InstantCast>
 					</Target_Properties>
 				
 				
@@ -429,6 +426,10 @@
 					<li>
 						<ThingDefConsumed>MedicineUltratech</ThingDefConsumed>
 						<numberCreated>35</numberCreated>
+					</li>		
+					<li>
+						<ThingDefConsumed>AdventurersFirstAid</ThingDefConsumed>
+						<numberCreated>20</numberCreated>
 					</li>					
 				</ConvertSets>
 				
@@ -474,7 +475,7 @@
 				<AbilityCooldownInTicks>150</AbilityCooldownInTicks>
 				<verblike>
 					<violent>false</violent>
-					<warmupTime>0.5</warmupTime>
+					<warmupTime>0.0</warmupTime>
 					<warmupEffecter>JumpWarmupEffect</warmupEffecter>
 					<requireLineOfSight>true</requireLineOfSight>
 					<range>15</range>
@@ -574,7 +575,7 @@
 							</li>
 					</phenotypes>
 					<Target_Properties>
-						<canTargetLocations>true</canTargetLocations>
+						<canTargetLocations>false</canTargetLocations>
 						<canTargetPawns>true</canTargetPawns>
 						<canTargetBuildings>true</canTargetBuildings>
 						<onlySelfCast>false</onlySelfCast>
@@ -585,6 +586,7 @@
 						<InstantCast>true</InstantCast>
 						<canTargetSelf>false</canTargetSelf>
 						<canHitPlayerFaction>false</canHitPlayerFaction>
+						<targetLock>true</targetLock>
 					</Target_Properties>
 				</phenomenon>
 			</li>
