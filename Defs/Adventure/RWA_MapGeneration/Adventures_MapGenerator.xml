@@ -20,7 +20,7 @@
   	<GenStepDef>
 	<defName>LabyrinthAdventure</defName>
 	<order>420</order>
-	<genStep Class="Adventure.Core.GenStep_Labyrinth" />
+	<genStep Class="DungeonFrameWork.GenStep_Labyrinth" />
 	</GenStepDef>
 	
 
@@ -42,7 +42,7 @@
   	<GenStepDef>
 	<defName>AdventureTown</defName>
 	<order>777</order>
-	<genStep Class="Adventure.MapLotAdventure.GenStep_TownMap" />
+	<genStep Class="DungeonFrameWork.GenStep_TownMap" />
 	</GenStepDef>
 	
 

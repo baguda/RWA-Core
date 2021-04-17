@@ -70,7 +70,7 @@
     <defName>AdventurersBackpack</defName>
     <label>Adventurer's Backpack</label>
     <description>The standard kit for any adventure!</description>
-    <thingClass>Adventure.Mechanics.AdventureHits</thingClass>
+    <thingClass>AdventureFramework.AdventureHits</thingClass>
     <graphicData>
       <texPath>Adventure/backpack</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -148,7 +148,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-	<thingClass>Adventure.Mechanics.AdventureGear</thingClass>
+	<thingClass>AdventureFramework.AdventureGear</thingClass>
     <statBases>
       <Mass>1</Mass>
       <WorkToMake>600</WorkToMake>
@@ -178,7 +178,7 @@
       </tags>
     </apparel>
 	<comps>
-		<li Class="Adventure.Mechanics.CompProperties_AdventureHediffGiver">
+		<li Class="AdventureFramework.CompProperties_AdventureHediffGiver">
 			<HediffDefToGive>Hediff_Medic</HediffDefToGive>
 		</li>
 	</comps>
@@ -216,7 +216,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-	<thingClass>Adventure.Mechanics.AdventureGear</thingClass>
+	<thingClass>AdventureFramework.AdventureGear</thingClass>
     <statBases>
       <Mass>1</Mass>
       <WorkToMake>600</WorkToMake>
@@ -246,7 +246,7 @@
       </tags>
     </apparel>
 	<comps>
-		<li Class="Adventure.Mechanics.CompProperties_AdventureHediffGiver">
+		<li Class="AdventureFramework.CompProperties_AdventureHediffGiver">
 			<HediffDefToGive>Hediff_TorchTosser</HediffDefToGive>
 		</li>
 	</comps>
@@ -284,7 +284,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-	<thingClass>Adventure.Mechanics.AdventureGear</thingClass>
+	<thingClass>AdventureFramework.AdventureGear</thingClass>
     <statBases>
       <Mass>1</Mass>
       <WorkToMake>600</WorkToMake>
@@ -314,7 +314,7 @@
       </tags>
     </apparel>
 	<comps>
-		<li Class="Adventure.Mechanics.CompProperties_AdventureHediffGiver">
+		<li Class="AdventureFramework.CompProperties_AdventureHediffGiver">
 			<HediffDefToGive>Hediff_Command</HediffDefToGive>
 			<canAvoidDamage>true</canAvoidDamage>
 			<AvoidChance>0.15</AvoidChance>
