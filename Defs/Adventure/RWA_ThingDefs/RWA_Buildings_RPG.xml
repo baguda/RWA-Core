@@ -67,6 +67,7 @@
         <ticksPerHeal>1</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
 
       </li>
+
     </comps>
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
