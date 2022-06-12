@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AdventureFramework.AdventureDef>
+		<defName>DefaultAdventure</defName>
+		<label>daf</label>
+		<WorldObjectDefName>Ambush</WorldObjectDefName>
+		<useWeather>False</useWeather>
+		<WeatherDefName>Ambush</WeatherDefName>
+		<UseFoodFreeze>True</UseFoodFreeze>
+		<UseRestFreeze>False</UseRestFreeze>
+		<UseJoyFreeze>True</UseJoyFreeze>
+		<UseFoodModifier>True</UseFoodModifier>
+		<UseRestModifier>False</UseRestModifier>
+		<UseJoyModifier>False</UseJoyModifier>
+		<TicksPerTurn>600</TicksPerTurn>
+		<FoodPerTurn>0.01</FoodPerTurn>
+		<UseAdventureThought>True</UseAdventureThought>
+		<UseAdventureHealth>True</UseAdventureHealth>
+		<HealthRegenPerTurn>0.05</HealthRegenPerTurn>
+		<useParty>True</useParty>
+		<usePartyCheckPoint>False</usePartyCheckPoint>
+		<UseDrafted>False</UseDrafted>
+	</AdventureFramework.AdventureDef>
+</Defs>

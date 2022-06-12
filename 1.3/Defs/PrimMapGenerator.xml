@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+      <MapGeneratorDef>
+	<defName>CellSetMapGen</defName>
+		<genSteps>
+			<li>ElevationFertility</li>
+			<!--li>Caves</li-->
+			<!--li>RocksFromGrid</li-->
+			<li>Terrain</li>
+			<!--li>CavesTerrain</li-->
+			<!--li>RockChunks</li-->
+			<li>CellSetMap</li>
+			
+			<li>Fog</li>
+		</genSteps>
+	</MapGeneratorDef>
+  
+  	<GenStepDef>
+	<defName>CellSetMap</defName>
+	<order>420</order>
+	<genStep Class="CellSetMaps.GenStep_CellSets" />
+	</GenStepDef>
+	
+
+	<WorldObjectDef>
+		<defName>DefaultWO</defName>
+		<label>Val'Darohm</label>
+		<description>Lost long ago, the ruins of Val'Darohm holds many dark secrets.</description>
+		<worldObjectClass>MapParent</worldObjectClass>
+		<texture>World/WorldObjects/JourneyDestination</texture>
+		<useDynamicDrawer>false</useDynamicDrawer>
+		<expandingIcon>true</expandingIcon>
+		<expandingIconTexture>World/WorldObjects/Expanding/JourneyDestination</expandingIconTexture>
+		<mapGenerator>HammerTime</mapGenerator>
+		<expandingIconPriority>6</expandingIconPriority>
+		<comps>
+			<li Class="WorldObjectCompProperties_Abandon" />
+		</comps>
+	</WorldObjectDef>
+	
+	
+	
+<!--ThingDef ParentName="BuildingBase"> 
+    <defName>VD_RaidersRanged</defName>
+    <label>VD_RaidersRanged</label>
+    <thingClass>Transporter.Building_TransBuffer</thingClass>
+    <graphicData>
+      <texPath>Adventure/AdventureTable</texPath>
+      <graphicClass>Graphic_single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>00</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>VD_RaidersRanged</description>
+    <canOverlapZones>true</canOverlapZones>
+	
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <comps>
+
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <designationHotKey>Misc3</designationHotKey>
+	<designationCategory>Misc</designationCategory>
+  </ThingDef-->
+  
+</Defs>

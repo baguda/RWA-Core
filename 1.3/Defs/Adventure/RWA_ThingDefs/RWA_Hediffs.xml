@@ -135,7 +135,7 @@
 							<OpticsOnTargets>
 								<Scale>1</Scale>
 								<UseOptics>true</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Heart</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>
@@ -162,7 +162,7 @@
 							<OpticsOnPath>
 								<Scale>1</Scale>
 								<UseOptics>true</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Heart</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>
@@ -232,11 +232,16 @@
 				<ConvertSets>
 					<li>
 						<ThingCategoryDefConsumed>Weapons</ThingCategoryDefConsumed>
-						<numberCreated>2</numberCreated>
+						<numberCreated>5</numberCreated>
 					</li>
 					<li>
+						<ThingCategoryDefConsumed>Apparel</ThingCategoryDefConsumed>
+						<numberCreated>5</numberCreated>
+					</li>
+
+					<li>
 						<ThingDefConsumed>AdventureFlares</ThingDefConsumed>
-						<numberCreated>10</numberCreated>
+						<numberCreated>50</numberCreated>
 					</li>
 				</ConvertSets>
 				
@@ -264,7 +269,7 @@
         <StartingResourceAmount>50</StartingResourceAmount>
         <ResourceDecayOverTime>true</ResourceDecayOverTime>
         <ResourceGrowOverTime>false</ResourceGrowOverTime>
-        <GrowOrDecayPerSec>0.125</GrowOrDecayPerSec>
+        <GrowOrDecayPerSec>0.025</GrowOrDecayPerSec>
         <startingMaxResource>100</startingMaxResource>
 		
 		<Abilities>
@@ -315,7 +320,7 @@
 							<OpticsOnTargets>
 								<Scale>1</Scale>
 								<UseOptics>true</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Mote_LightBall</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>
@@ -342,7 +347,7 @@
 							<OpticsOnPath>
 								<Scale>1</Scale>
 								<UseOptics>false</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Mote_LightBall</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>
@@ -412,9 +417,13 @@
 				<isConverter>true</isConverter>
 				<ConvertSets>
 					<li>
-						<ThingCategoryDefConsumed>Apparel</ThingCategoryDefConsumed>
-						<numberCreated>5</numberCreated>
+						<ThingCategoryDefConsumed>Foods</ThingCategoryDefConsumed>
+						<numberCreated>1</numberCreated>
 					</li>
+					<li>
+						<ThingCategoryDefConsumed>Drugs</ThingCategoryDefConsumed>
+						<numberCreated>15</numberCreated>
+					</li>					
 					<li>
 						<ThingDefConsumed>MedicineHerbal</ThingDefConsumed>
 						<numberCreated>10</numberCreated>
@@ -546,7 +555,7 @@
 							<OpticsOnPath>
 								<Scale>1</Scale>
 								<UseOptics>false</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Heart</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>
@@ -671,7 +680,7 @@
 							<OpticsOnPath>
 								<Scale>1</Scale>
 								<UseOptics>false</UseOptics>
-								<MoteDef>Mote_Heart</MoteDef>
+								<MoteDef>Heart</MoteDef>
 								<MoteColor>(200,200,200)</MoteColor>
 								<MoteText>Hello!</MoteText>
 								<MoteFadeoutTime>-1</MoteFadeoutTime>

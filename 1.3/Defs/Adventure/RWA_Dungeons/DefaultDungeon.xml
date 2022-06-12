@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DungeonFrameWork.DungeonDef>
+		<defName>DefaultDungeon</defName>
+		<label>GO</label>
+		<PathWidth>1</PathWidth>
+		<MapSize>(159, 0, 214)</MapSize>
+		<IsLinked>False</IsLinked>
+		<StepsAway>10</StepsAway>
+		<Enclosed>False</Enclosed>
+		<UseNodeRoom>False</UseNodeRoom>
+		<ScaleGridToPath>True</ScaleGridToPath>
+		<GridScaleCoef>5</GridScaleCoef>
+		<NodeRoomsOnlyOnEnds>True</NodeRoomsOnlyOnEnds>
+		<isSegmented>False</isSegmented>
+		<isDoored>False</isDoored>
+		<ConditionTile>False</ConditionTile>
+		<MakeFilth>False</MakeFilth>
+		<FilthFactor>0.5</FilthFactor>
+		<isFilled>False</isFilled>
+		<isWalled>True</isWalled>
+		<isRoofed>False</isRoofed>
+		<isShellRoofed>True</isShellRoofed>
+		<isShellFloored>False</isShellFloored>
+		<isCaveLike>False</isCaveLike>
+		<UseBlockFloors>True</UseBlockFloors>
+		<UseDarkness>False</UseDarkness>
+		<dungeonLightLevel>0.7131147</dungeonLightLevel>
+		<dungeonColor>RGBA(100.000, 170.000, 100.000, 1.000)</dungeonColor>
+		<dungeonColorSaturation>1</dungeonColorSaturation>
+		<isWalkIn>True</isWalkIn>
+		<isInZDir>True</isInZDir>
+		<isInPosDir>False</isInPosDir>
+		<isWalkOut>True</isWalkOut>
+		<isOutZDir>True</isOutZDir>
+		<isOutPosDir>True</isOutPosDir>
+		<isOutDoored>False</isOutDoored>
+		<BlockDefName>z</BlockDefName>
+		<FloorDefName>x</FloorDefName>
+		<DoorDefName>a</DoorDefName>
+		<BlockStuffDefName>s</BlockStuffDefName>
+		<FloorBlockDefName>d</FloorBlockDefName>
+		<DoorStuffDefName>f</DoorStuffDefName>
+		<EnterenceDefName>g</EnterenceDefName>
+		<ExitDefName>h</ExitDefName>
+		<UseExit>False</UseExit>
+		<AdventureDefName>j</AdventureDefName>
+		<encounterDefNames>
+			<li>test1</li>
+		</encounterDefNames>
+		<LinkedLabyrinthDefNames>
+			<li>test2</li>
+		</LinkedLabyrinthDefNames>
+		<LotsList>
+			<li>test3</li>
+		</LotsList>
+		<DungeonGenThingDefs>
+			<li>Silver</li>
+		</DungeonGenThingDefs>
+	</DungeonFrameWork.DungeonDef>
+</Defs>
